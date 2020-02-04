@@ -43,8 +43,7 @@ class Handle(object):
                 fromUser = recMsg.ToUserName
                 a= len(open('menu.txt','rU').readlines())#读取菜单行数
                 print(a)
-                b= int(a)
-                num = random.randint(0, b-1)#以行数随机选取数字，主要要减1
+                num = random.randint(0, a-1)#以行数随机选取数字，主要要减1
                 print(num)
                 fileName = 'menu.txt'
                 with open(fileName,'r') as f:
